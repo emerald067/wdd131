@@ -67,9 +67,8 @@ h2 {
   background: #003366;
   color: white;
   padding: 0.5rem;
-  margin: 1;
+  margin: -1rem;
   border-radius: 8px;
-
 }
 
 h3 {
