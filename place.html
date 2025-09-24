@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Miami - WDD 131">
+    <meta name="author" content="Emerald Uwaoma Awoke">
+    <title>Discover Miami</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Discover Miami</h1>
+  </header>
+
+  <!-- Hero Section -->
+  <picture>
+    <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+    <img src="images/hero-small.webp" alt="Miami Beach Skyline" width="1200" height="600">
+  </picture>
+
+  <!-- Main Content -->
+  <main>
+    <!-- About Section -->
+    <section class="card">
+      <h2>About Miami</h2>
+      <ul>
+        <li><strong>Area:</strong> 145.23 km² (93.23 km² land, 52.00 km² water)</li>
+        <li><strong>Population:</strong> 442,241 (2020 census)</li>
+        <li><strong>Capital:</strong> Not a capital (Florida’s capital is Tallahassee)</li>
+        <li><strong>Languages:</strong> English, Spanish widely spoken</li>
+        <li><strong>Currency:</strong> U.S. Dollar (USD)</li>
+        <li><strong>Timezone:</strong> Eastern Time (UTC −05:00 / −04:00 DST)</li>
+        <li><strong>Calling Code:</strong> +1 (area codes 305, 786, 645)</li>
+        <li><strong>Internet TLD:</strong> .us, .miami</li>
+      </ul>
+    </section>
+
+    <!-- Weather Section -->
+    <section class="card">
+      <h2>Current Weather</h2>
+      <div class="weather">
+        <!-- SVG: Cloudy Icon -->
+        <img src="images/weather.svg" alt="Weather Icon" width="64" height="64">
+        <ul>
+          <li><strong>Temperature:</strong> 26 °C</li>
+          <li><strong>Conditions:</strong> Mostly Cloudy</li>
+          <li><strong>Wind:</strong> East, 8 km/h (5 mph)</li>
+          <li><strong>Wind Chill:</strong> N/A</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© <span id="year"></span> ✨ Discover Miami ✨ Emerald Uwaoma Awoke ✨</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
