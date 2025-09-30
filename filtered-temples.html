@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temple Album - WDD 131 Project">
+    <meta name="author" content="Emerald Uwaoma Awoke">
+    <title>Filtered Temple Album - WDD 131</title> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+
+
+    <header>
+        <h1>Temple Album</h1>
+        <nav id="menu">
+            <button id="menu">☰</button>
+            <ul id="menuitems" class="hidden">
+                <li><a href="#" data-filter="home">Home</a></li>
+                <li><a href="#" data-filter="old">Old</a></li>
+                <li><a href="#" data-filter="new">New</a></li>
+                <li><a href="#" data-filter="large">Large</a></li>
+                <li><a href="#" data-filter="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <h2>Temple Gallery</h2>
+        <div id="temple-cards" class="card-container"></div>
+    </main>
+
+
+    <footer>
+        <p>©<span id="currentyear"></span> ✨ Emerald Uwaoma Awoke ✨ Nigeria </p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
