@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Load Demonstrtion</title>
+    <meta name="description" content="Lazy Load Demonstration - WDD 131">
+    <meta name="author" content="Emerald Uwaoma Awoke">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/lazyload.css"> 
+    <script src="scripts/lazyload.js " defer></script>
+</head>
+<body>
+    <header><h1>Lazy Load Demonstration</h1></header>
+
+    <main>
+       <figure>
+            <img src="images/temple1.jpg" alt="Salt Lake Temple" loading="lazy" width="400" height="600">
+            <figcaption>Salt Lake Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/temple2.jpg" alt="Hamilton New Zealand Temple" loading="lazy" width="400" height="600">
+            <figcaption>Hamilton New Zealand Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/temple3.jpg" alt="Gilbert Arizona Temple" loading="lazy" width="400" height="600">
+            <figcaption>Gilbert Arizona Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/temple4.jpg" alt="Frankfurt Germany Temple" loading="lazy" width="400" height="600">
+            <figcaption>Frankfurt Germany Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/temple5.jpg" alt="Buenos Aires Argentina Temple" loading="lazy" width="400" height="600">
+            <figcaption>Buenos Aires Argentina Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/temple6.jpg" alt="Bountiful Utah Temple" loading="lazy width="400" height="600">
+            <figcaption>Bountiful Utah Temple</figcaption>
+        </figure>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> ✨ Emerald Uwaoma Awoke ✨ Nigeria </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
