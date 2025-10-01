@@ -129,7 +129,7 @@ document.querySelectorAll("nav a").forEach(link => {
 });
 
 // Hamburger toggle
-const menuButton = document.querySelector("#menu");
+const menuButton = document.querySelector("#menu-button");
 const menuItems = document.querySelector("#menuitems");
 
 menuButton.addEventListener("click", () => {
