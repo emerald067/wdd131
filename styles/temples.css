@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: ver(--font-heading);
+  font-family: var(--font-heading);
   color: var(--text-color);
   margin: 0;
 }
