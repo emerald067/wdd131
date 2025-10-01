@@ -6,6 +6,8 @@
     <meta name="description" content="Filtered Temple Album - WDD 131 Project">
     <meta name="author" content="Emerald Uwaoma Awoke">
     <title>Filtered Temple Album - WDD 131</title> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/filtered-temples.css">
     <link rel="stylesheet" href="styles/filtered-temples-large.css">
@@ -15,7 +17,7 @@
     <header>
         <h1>Temple Album</h1>
         <nav>
-            <button id="hamburger">☰</button>
+            <button id="hamburger" aria-label="Menu"> ☰</button>
             <ul id="navigation">
                 <li><a href="#" data-filter="home">Home</a></li>
                 <li><a href="#" data-filter="old">Old</a></li>
@@ -32,6 +34,6 @@
     </main>
 
     <footer>
-        <p>©<span id="currentyear"></span> ✨ Emerald Uwaoma Awoke ✨ Nigeria </p>
+        <p>&copy;<span id="currentyear"></span> ✨ Emerald Uwaoma Awoke ✨ Nigeria </p>
         <p id="lastModified"></p>
     </footer>
