@@ -12,13 +12,11 @@
     <script src="scripts/filtered-temples.js" defer></script>
 </head>
 <body>
-
-
     <header>
         <h1>Temple Album</h1>
-        <nav id="menu">
-            <button id="menu-button" aria-label="menu">☰</button>
-            <ul id="menuitems" class="hidden">
+        <nav>
+            <button id="hamburger">☰</button>
+            <ul id="navigation">
                 <li><a href="#" data-filter="home">Home</a></li>
                 <li><a href="#" data-filter="old">Old</a></li>
                 <li><a href="#" data-filter="new">New</a></li>
@@ -28,17 +26,12 @@
         </nav>
     </header>
 
-
     <main>
         <h2>Temple Gallery</h2>
         <div id="temple-cards" class="card-container"></div>
     </main>
 
-
     <footer>
         <p>©<span id="currentyear"></span> ✨ Emerald Uwaoma Awoke ✨ Nigeria </p>
         <p id="lastModified"></p>
     </footer>
-
-</body>
-</html>
