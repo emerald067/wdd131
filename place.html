@@ -31,7 +31,7 @@
       <ul>
         <li><strong>Area:</strong> 145.23 km² (93.23 km² land, 52.00 km² water)</li>
         <li><strong>Population:</strong> 442,241 (2020 census)</li>
-        <li><strong>Capital:</strong> Not a capital (Florida’s capital is Tallahassee)</li>
+        <li><strong>Capital:</strong> Not a capital (Florida's capital is Tallahassee)</li>
         <li><strong>Languages:</strong> English, Spanish widely spoken</li>
         <li><strong>Currency:</strong> U.S. Dollar (USD)</li>
         <li><strong>Timezone:</strong> Eastern Time (UTC −05:00 / −04:00 DST)</li>
@@ -44,13 +44,13 @@
     <section class="card">
       <h2>Current Weather</h2>
       <div class="weather">
-        <!-- SVG: Cloudy Icon -->
-        <img src="images/weather.svg" alt="Weather Icon" width="64" height="64">
+        <!-- SVG: Cloudy Icon - MOBILE ONLY -->
+        <img src="images/weather.svg" alt="Weather Icon" width="64" height="64" class="weather-icon">
         <ul>
-          <li><strong>Temperature:</strong> 26 °C</li>
+          <li><strong>Temperature:</strong> <span id="temperature">26</span> °C</li>
           <li><strong>Conditions:</strong> Mostly Cloudy</li>
-          <li><strong>Wind:</strong> East, 8 km/h (5 mph)</li>
-          <li><strong>Wind Chill:</strong> N/A</li>
+          <li><strong>Wind:</strong> East, <span id="windSpeed">8</span> km/h (5 mph)</li>
+          <li><strong>Wind Chill:</strong> <span id="windChill">N/A</span></li>
         </ul>
       </div>
     </section>
