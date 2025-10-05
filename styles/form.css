@@ -1,0 +1,97 @@
+:root {
+    --primary-color: #4a148c;
+    --accent-color: #7b1fa2;
+    --bg-color: #f7f7f7;
+    --text-color: #222;
+    --border-radius: 6px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+header, footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+label, legend {
+  font-weight: 600;
+  margin-top: 10px;
+  display: block;
+}
+
+main {
+  max-width: 600px;
+  margin: 1.5rem auto;
+  background: white;
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+form {
+  max-width: 600px;
+  margin: auto;
+  background: #e7eff6;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  gap: 1rem;
+}
+
+label, legend {
+  font-weight: bold;
+}
+
+input, select, textarea {
+  padding: 0.5rem;
+  margin-top: 6px;
+  border-radius: var(--border-radius);
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  width: auto;
+  margin-right: 6px;
+}
+
+input[type="submit"]:hover {
+  background-color: #9c27b0;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  padding: 1rem;
+}
+
+span {
+  color: red;
+}
+
+
+
