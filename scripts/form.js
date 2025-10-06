@@ -1,59 +1,30 @@
+// Product data array
 const products = [
-  {
-    id: "fc-1888",
-    name: "flux capacitor",
-    averagerating: 4.5
-  },
-  {
-    id: "fc-2050",
-    name: "power laces",
-    averagerating: 4.7
-  },
-  {
-    id: "fs-1987",
-    name: "time circuits",
-    averagerating: 3.5
-  },
-  {
-    id: "ac-2000",
-    name: "low voltage reactor",
-    averagerating: 3.9
-  },
-  {
-    id: "jj-1969",
-    name: "warp equalizer",
-    averagerating: 5.0
-  }
+    { id: "fc-1888", name: "flux capacitor" },
+    { id: "fc-2050", name: "power laces" },
+    { id: "fs-1987", name: "time circuits" },
+    { id: "ac-2000", name: "low voltage reactor" },
+    { id: "jj-1969", name: "warp equalizer" }
 ];
 
-// Populate select options dynamically
-const productSelect = document.getElementById("productName");
-products.forEach(product => {
-  const option = document.createElement("option");
-  option.value = product.id;
-  option.textContent = product.name;
-  productSelect.appendChild(option);
+// Populate product select options
+document.addEventListener('DOMContentLoaded', function() {
+    const productSelect = document.getElementById('product-name');
+    
+    // Clear any existing options except the first one
+    while (productSelect.children.length > 1) {
+        productSelect.removeChild(productSelect.lastChild);
+    }
+    
+    // Add product options to select element
+    products.forEach(product => {
+        const option = document.createElement('option');
+        option.value = product.id;
+        option.textContent = product.name.charAt(0).toUpperCase() + product.name.slice(1);
+        productSelect.appendChild(option);
+    });
+    
+    // Set current year in footer
+    document.getElementById('currentyear').textContent = new Date().getFullYear();
+    document.getElementById('lastModified').textContent = `Last Modified: ${document.lastModified}`;
 });
-
-// Footer info
-document.querySelector("#year").textContent = new Date().getFullYear();
-document.querySelector("#lastModified").textContent = `Last Modified: ${document.lastModified}`;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
