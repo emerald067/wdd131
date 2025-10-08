@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Nigeria's rich history, diverse cultures, and heritage">
+    <meta name="author" content="Emerald Uwaoma Awoke">
+    <title>About Nigeria - Discover Nigeria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Discover Nigeria</h1>
+            <button id="hamburger" aria-label="Menu">☰</button>
+            <nav>
+                <ul id="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-about-large.webp" media="(min-width: 1000px)">
+                <img src="images/hero-about-small.webp" alt="Traditional Nigerian art and artifacts" loading="lazy">
+            </picture>
+            <div class="hero-text">
+                <h2>About Nigeria</h2>
+                <p>Discover our rich history and diverse cultural heritage</p>
+            </div>
+        </section>
+
+        <section class="about-content">
+            <div class="container">
+                <div class="history-section">
+                    <h2>Our History</h2>
+                    <p>Nigeria, located in West Africa, has a history dating back thousands of years. From ancient civilizations like the Nok culture (1500 BC - 500 AD) to powerful kingdoms such as the Benin Empire, Oyo Empire, and the Kanem-Bornu Empire, Nigeria's past is rich with remarkable achievements in art, governance, and trade.</p>
+                    
+                    <p>The country gained independence from British colonial rule on October 1, 1960, and has since grown into Africa's largest economy and most populous nation.</p>
+                </div>
+
+                <div class="cultural-diversity">
+                    <h2>Cultural Diversity</h2>
+                    <p>Nigeria is often called the "Giant of Africa" not just for its population and economy, but for its incredible cultural diversity:</p>
+                    
+                    <div class="ethnic-groups" id="ethnic-groups">
+                        <!-- JavaScript will populate this -->
+                    </div>
+                </div>
+
+                <div class="traditional-arts">
+                    <h2>Traditional Arts & Crafts</h2>
+                    <div class="arts-grid">
+                        <div class="art-item">
+                            <h3>🥁 Music & Dance</h3>
+                            <p>From Afrobeat to traditional rhythms, Nigerian music has influenced the world. Traditional dances tell stories of history and community.</p>
+                        </div>
+                        <div class="art-item">
+                            <h3>🎨 Visual Arts</h3>
+                            <p>Famous for bronze casting, pottery, weaving, and painting. The Benin Bronzes are world-renowned artifacts.</p>
+                        </div>
+                        <div class="art-item">
+                            <h3>📚 Literature</h3>
+                            <p>Home to Nobel laureate Wole Soyinka and renowned authors like Chinua Achebe and Chimamanda Ngozi Adichie.</p>
+                        </div>
+                        <div class="art-item">
+                            <h3>👗 Fashion</h3>
+                            <p>Vibrant traditional attire like Aso Oke, Ankara, and George fabrics showcase Nigeria's fashion creativity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="currentyear"></span> ✨ Discover Nigeria ✨ Emerald Uwaoma Awoke</p>
+            <p id="lastModified"></p>
+            <p><a href="references.html">References</a></p>
+        </div>
+    </footer>
+</body>
+</html>

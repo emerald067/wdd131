@@ -1,0 +1,106 @@
+/* Large Screen Styles */
+@media (min-width: 768px) {
+    /* Header and Navigation */
+    #hamburger {
+        display: none;
+    }
+
+    nav {
+        position: static;
+        display: block !important;
+        background: none;
+    }
+
+    #navigation {
+        display: flex;
+        gap: 2rem;
+    }
+
+    #navigation li {
+        border-bottom: none;
+    }
+
+    #navigation a {
+        padding: 0.5rem 1rem;
+        border-radius: var(--border-radius);
+    }
+
+    /* Hero Section */
+    .hero img {
+        height: 500px;
+    }
+
+    .hero-text h2 {
+        font-size: 3rem;
+    }
+
+    .hero-text p {
+        font-size: 1.5rem;
+    }
+
+    /* Grid Layouts */
+    .cards-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .destinations-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .arts-grid,
+    .tips-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Cultural Spotlight */
+    .culture-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* About Page */
+    .ethnic-groups {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Destinations Filter */
+    .filter-controls {
+        grid-template-columns: auto auto auto;
+        align-items: end;
+        gap: 1rem;
+    }
+
+    .filter-controls label {
+        margin-bottom: 0;
+    }
+
+    /* Contact Page */
+    .contact-grid {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    /* FAQ Section */
+    .faq-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .faq-item {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .destinations-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .arts-grid,
+    .tips-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .cards-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

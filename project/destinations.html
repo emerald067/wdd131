@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore amazing travel destinations in Nigeria - from natural wonders to cultural sites">
+    <meta name="author" content="Emerald Uwaoma Awoke">
+    <title>Travel Destinations - Discover Nigeria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Discover Nigeria</h1>
+            <button id="hamburger" aria-label="Menu">☰</button>
+            <nav>
+                <ul id="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="destinations.html" class="active">Destinations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-destinations-large.webp" media="(min-width: 1000px)">
+                <img src="images/hero-destinations-small.webp" alt="Beautiful Nigerian waterfall and natural landscape" loading="lazy">
+            </picture>
+            <div class="hero-text">
+                <h2>Travel Destinations</h2>
+                <p>Explore the amazing places Nigeria has to offer</p>
+            </div>
+        </section>
+
+        <section class="destinations-controls">
+            <div class="container">
+                <div class="filter-controls">
+                    <label for="region-filter">Filter by Region:</label>
+                    <select id="region-filter">
+                        <option value="all">All Regions</option>
+                        <option value="north">Northern Nigeria</option>
+                        <option value="south">Southern Nigeria</option>
+                        <option value="east">Eastern Nigeria</option>
+                        <option value="west">Western Nigeria</option>
+                    </select>
+                    
+                    <label for="type-filter">Filter by Type:</label>
+                    <select id="type-filter">
+                        <option value="all">All Types</option>
+                        <option value="nature">Nature & Wildlife</option>
+                        <option value="cultural">Cultural Sites</option>
+                        <option value="beach">Beaches & Resorts</option>
+                        <option value="historical">Historical Sites</option>
+                    </select>
+
+                    <button id="reset-filters" class="secondary-button">Reset Filters</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="destinations-grid-section">
+            <div class="container">
+                <h2>Popular Destinations</h2>
+                <div class="destinations-grid" id="destinations-container">
+                    <!-- JavaScript will populate this -->
+                </div>
+            </div>
+        </section>
+
+        <section class="travel-tips">
+            <div class="container">
+                <h2>Travel Tips</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <h3>🌤️ Best Time to Visit</h3>
+                        <p>The dry season (November to March) is ideal for travel with pleasant weather and minimal rainfall.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>🛂 Visa Requirements</h3>
+                        <p>Most visitors need a visa. Check with the Nigerian embassy in your country for specific requirements.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>💰 Currency</h3>
+                        <p>The Nigerian Naira (₦) is the local currency. Credit cards are accepted in major cities.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>🚗 Transportation</h3>
+                        <p>Domestic flights connect major cities. Buses and taxis are available for local travel.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="currentyear"></span> ✨ Discover Nigeria ✨ Emerald Uwaoma Awoke</p>
+            <p id="lastModified"></p>
+            <p><a href="references.html">References</a></p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Plan - Discover Nigeria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #008751;
+            --secondary-color: #FFFFFF;
+            --accent-color: #E6BE8A;
+            --text-color: #333333;
+            --background-color: #F8F9FA;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), #006442);
+            color: var(--secondary-color);
+            padding: 2rem;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Merriweather', serif;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        header h1 {
+            color: var(--secondary-color);
+            font-size: 2.5rem;
+        }
+
+        section {
+            background: var(--secondary-color);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .color-schema {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .color-box {
+            padding: 2rem;
+            border-radius: 8px;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .primary { background-color: var(--primary-color); }
+        .secondary { background-color: var(--secondary-color); color: var(--text-color); border: 2px solid #ddd; }
+        .accent { background-color: var(--accent-color); color: var(--text-color); }
+        .text { background-color: var(--text-color); }
+        .background { background-color: var(--background-color); color: var(--text-color); border: 2px solid #ddd; }
+
+        .typography-demo {
+            margin-top: 1rem;
+        }
+
+        .font-merriweather {
+            font-family: 'Merriweather', serif;
+        }
+
+        .font-opensans {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .wireframe {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .wireframe-box {
+            background: #f0f0f0;
+            padding: 1rem;
+            border: 2px dashed #ccc;
+            border-radius: 8px;
+            min-height: 400px;
+        }
+
+        .wireframe-box h4 {
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #666;
+        }
+
+        .mobile-content, .desktop-content {
+            background: white;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+
+        @media (max-width: 768px) {
+            .wireframe {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        ul {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Discover Nigeria - Website Plan</h1>
+        <p>Cultural Tourism and Information Website</p>
+    </header>
+
+    <section id="site-name">
+        <h2>Site Name</h2>
+        <p><strong>Discover Nigeria</strong></p>
+        <p>This name clearly communicates the purpose of the website - to help visitors discover and explore Nigeria's rich culture, food, and travel destinations.</p>
+        <p><em>Optional domain: discover-nigeria.org</em></p>
+    </section>
+
+    <section id="site-purpose">
+        <h2>Site Purpose</h2>
+        <p>The Discover Nigeria website serves as a comprehensive digital guide to Nigerian culture, cuisine, and tourism.</p>
+        <ul>
+            <li>Showcase Nigeria's diverse cultural heritage and traditions</li>
+            <li>Provide information about popular Nigerian dishes and recipes</li>
+            <li>Highlight must-visit travel destinations and attractions</li>
+            <li>Offer practical travel information and tips for visitors</li>
+            <li>Promote cultural understanding and tourism in Nigeria</li>
+        </ul>
+    </section>
+
+    <section id="scenarios">
+        <h2>Scenarios</h2>
+        <p>Target audience questions that will drive website content:</p>
+        <ul>
+            <li><strong>"I'm planning my first trip to Nigeria. What are the must-visit places and what should I know about local customs?"</strong></li>
+            <li><strong>"I want to experience authentic Nigerian cuisine. What are the most popular dishes and where can I find recipes to try cooking them?"</strong></li>
+            <li><strong>"What cultural festivals and events happen throughout the year in different regions of Nigeria?"</strong></li>
+        </ul>
+    </section>
+
+    <section id="color-schema">
+        <h2>Color Schema</h2>
+        <p>The color palette is inspired by Nigeria's flag and natural landscapes:</p>
+        <div class="color-schema">
+            <div class="color-box primary">
+                <p>Primary Green</p>
+                <p>#008751</p>
+                <p>Headers, navigation, primary buttons</p>
+            </div>
+            <div class="color-box secondary">
+                <p>White</p>
+                <p>#FFFFFF</p>
+                <p>Backgrounds, card backgrounds</p>
+            </div>
+            <div class="color-box accent">
+                <p>Gold/Sand</p>
+                <p>#E6BE8A</p>
+                <p>Accents, highlights, borders</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="typography">
+        <h2>Typography</h2>
+        <p>Selected fonts for the website:</p>
+        <div class="typography-demo">
+            <h3 class="font-merriweather">Merriweather - For Headings</h3>
+            <p class="font-merriweather">This serif font conveys tradition and elegance.</p>
+            
+            <h3 class="font-opensans">Open Sans - For Body Text</h3>
+            <p class="font-opensans">This clean, readable sans-serif font ensures excellent readability.</p>
+        </div>
+    </section>
+
+    <section id="wireframe">
+        <h2>Wireframe</h2>
+        <p>Basic layout sketches for the home page:</p>
+        <div class="wireframe">
+            <div class="wireframe-box">
+                <h4>Mobile View</h4>
+                <div class="mobile-content" style="text-align: center; padding: 0.5rem; background: var(--primary-color); color: white;">Header/Logo</div>
+                <div class="mobile-content" style="text-align: center; padding: 0.5rem; background: #eee;">☰ Navigation Menu</div>
+                <div class="mobile-content" style="height: 150px; background: #ddd; display: flex; align-items: center; justify-content: center;">Hero Image</div>
+                <div class="mobile-content">Introduction Text</div>
+                <div class="mobile-content">Culture Highlights</div>
+                <div class="mobile-content">Food Spotlight</div>
+                <div class="mobile-content">Travel Destinations</div>
+                <div class="mobile-content" style="text-align: center; padding: 0.5rem; background: var(--primary-color); color: white;">Footer</div>
+            </div>
+            <div class="wireframe-box">
+                <h4>Desktop View</h4>
+                <div style="display: flex; justify-content: space-between; background: var(--primary-color); color: white; padding: 0.5rem;">
+                    <div>Logo</div>
+                    <div style="display: flex; gap: 1rem;">
+                        <div>Home</div>
+                        <div>About</div>
+                        <div>Destinations</div>
+                        <div>Contact</div>
+                    </div>
+                </div>
+                <div class="desktop-content" style="height: 300px; background: #ddd; display: flex; align-items: center; justify-content: center; margin: 1rem 0;">Hero Image with Text Overlay</div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; margin: 1rem 0;">
+                    <div class="desktop-content" style="height: 150px;">Culture</div>
+                    <div class="desktop-content" style="height: 150px;">Food</div>
+                    <div class="desktop-content" style="height: 150px;">Travel</div>
+                </div>
+                <div class="desktop-content" style="text-align: center; padding: 1rem; background: var(--primary-color); color: white; margin-top: 1rem;">Footer</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

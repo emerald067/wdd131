@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Nigeria - Explore the rich culture, delicious food, and amazing travel destinations of Nigeria">
+    <meta name="author" content="Emerald Uwaoma Awoke">
+    <title>Discover Nigeria - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Discover Nigeria</h1>
+            <button id="hamburger" aria-label="Menu">☰</button>
+            <nav>
+                <ul id="navigation">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-home-large.webp" media="(min-width: 1000px)">
+                <img src="images/hero-home-small.webp" alt="Beautiful Nigerian landscape with mountains and greenery" loading="lazy">
+            </picture>
+            <div class="hero-text">
+                <h2>Welcome to Nigeria</h2>
+                <p>Discover the beauty, culture, and adventure of Africa's most vibrant nation</p>
+            </div>
+        </section>
+
+        <section class="highlights">
+            <div class="container">
+                <h2>Explore Nigeria</h2>
+                <div class="cards-grid" id="highlights-grid">
+                    <!-- JavaScript will populate this -->
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-destinations">
+            <div class="container">
+                <h2>Featured Destinations</h2>
+                <div class="destinations-grid" id="featured-destinations">
+                    <!-- JavaScript will populate this -->
+                </div>
+            </div>
+        </section>
+
+        <section class="cultural-spotlight">
+            <div class="container">
+                <h2>Cultural Spotlight</h2>
+                <div class="culture-content">
+                    <div class="culture-text">
+                        <h3>Rich Heritage</h3>
+                        <p>Nigeria is home to over 250 ethnic groups, each with unique traditions, languages, and cultural practices. From the colorful festivals to the intricate arts and crafts, experience the diversity that makes Nigeria truly special.</p>
+                        <button id="learn-more-btn" class="cta-button">Learn More About Our Culture</button>
+                    </div>
+                    <div class="culture-image">
+                        <img src="images/cultural-festival.webp" alt="Nigerian cultural festival with traditional attire" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="currentyear"></span> ✨ Discover Nigeria ✨ Emerald Uwaoma Awoke</p>
+            <p id="lastModified"></p>
+            <p><a href="references.html">References</a></p>
+        </div>
+    </footer>
+</body>
+</html>
