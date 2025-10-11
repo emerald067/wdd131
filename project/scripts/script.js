@@ -99,12 +99,6 @@ const highlights = [
         link: "about.html"
     },
     {
-        title: "Delicious Food",
-        description: "Taste authentic Nigerian cuisine like Jollof Rice, Suya, and Pounded Yam.",
-        icon: "🍛",
-        link: "about.html#food"
-    },
-    {
         title: "Amazing Nature",
         description: "Discover waterfalls, wildlife reserves, and stunning landscapes.",
         icon: "🌄",
@@ -153,14 +147,6 @@ const destinations = [
         type: "nature", 
         region: "west"
     },
-    {
-        name: "Obudu Mountain Resort",
-        location: "Cross River State",
-        description: "Mountain resort with cable cars, water parks, and stunning mountain views.",
-        image: "images/placeholder.webp",
-        type: "nature",
-        region: "south"
-    }
 ];
 
 // Display highlights on home page

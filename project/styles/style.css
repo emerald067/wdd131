@@ -88,6 +88,24 @@ nav {
     display: none;
 }
 
+nav ul {
+  list-style: none;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: var(--primary-green);
+  display: none;
+  flex-direction: column;
+  min-width: 200px;
+}
+
+nav ul.show {
+  display: flex;
+}
+
+nav ul li {
+  border-bottom: 1px solid var(--gold);
+}
 nav.show {
     display: block;
 }
@@ -127,10 +145,9 @@ nav.show {
 }
 
 .hero img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 2000px;
+  display: block;
 }
 
 .hero-text {
@@ -164,19 +181,18 @@ nav.show {
 
 /* Cards and Grids */
 .cards-grid,
-.destinations-grid,
-.arts-grid,
-.tips-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    margin: 2rem 0;
+.destinations-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .card {
     background: var(--secondary-color);
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
+    padding: 1rem;
+    text-align: center;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -188,9 +204,10 @@ nav.show {
 
 .card img {
     width: 100%;
-    height: 200px;
+    height: auto;
     object-fit: cover;
     display: block;
+    border-radius: var(--border-radius);
 }
 
 .card-content {
@@ -466,3 +483,18 @@ section {
     margin: 1rem 0;
     padding: 2rem 1rem; /* Added horizontal padding */
 }
+
+/* Mobile nav */
+@media (max-width: 768px) {
+  nav ul {
+    width: 200px;
+    padding: 1rem;
+    border-radius: 0 0 0 8px;
+  }
+
+  header h1 {
+    font-size: 1.3rem;
+  }
+}
+
+
