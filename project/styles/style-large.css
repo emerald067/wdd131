@@ -27,7 +27,7 @@
 
     /* Hero Section */
     .hero img {
-        height: 500px;
+        width: 100%;
     }
 
     .hero-text h2 {
