@@ -94,12 +94,13 @@ nav ul {
   list-style: none;
   position: absolute;
   top: 60px;
+  display: none;
   right: 0;
   background-color: var(--primary-green);
 }
 
 nav ul.show {
-  display: flex;
+  display: block;
 }
 
 nav ul li {
