@@ -100,7 +100,8 @@ nav ul {
 }
 
 nav ul.show {
-  display: block;
+  display: flex;
+  flex-direction: row;
 }
 
 nav ul li {
