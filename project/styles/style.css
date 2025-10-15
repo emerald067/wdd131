@@ -101,7 +101,7 @@ nav ul {
 
 nav ul.show {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 nav ul li {
